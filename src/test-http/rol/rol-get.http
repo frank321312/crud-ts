@@ -1,0 +1,3 @@
+## Obtener roles por proyecto
+GET {{Api_HostAddress}}/rol/get-roles-by-project/6
+Authorization: Bearer {{Token}}

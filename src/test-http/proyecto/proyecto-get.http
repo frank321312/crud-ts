@@ -1,0 +1,3 @@
+## Obtener todos los usuarios del proyecto
+GET {{Api_HostAddress}}/proyecto/get-users-by-project/6
+Authorization: Bearer {{Token}}

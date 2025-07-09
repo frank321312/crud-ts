@@ -1,0 +1,21 @@
+# ## Crear usuario
+# POST {{Api_HostAddress}}/usuario/create
+# Content-Type: application/json
+# {
+#     "nombreUsuario": "Pepito",
+#     "nombre": "Julio Cesar",
+#     "apellido": "Garcia",
+#     "correoElectronico": "usuariodeprueba92@gmail.com",
+#     "contrasena": "EstaEsMiPass123"
+# }
+
+## Crear usuario
+POST {{Api_HostAddress}}/usuario/create
+Content-Type: application/json
+{
+    "nombreUsuario": "Pepito",
+    "nombre": "Julio Cesar",
+    "apellido": "Garcia",
+    "correoElectronico": "usuariodepruesappe@gmail.com",
+    "contrasena": "EstaEsMiPass1234"
+}

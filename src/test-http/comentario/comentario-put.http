@@ -1,0 +1,7 @@
+## Actualizar comentario
+PATCH {{Api_HostAddress}}/comentario/update/4/6
+Content-Type: application/json
+Authorization: Bearer {{Token}}
+{
+    "contenido": "Comentario actualizado 5"
+}

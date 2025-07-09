@@ -1,0 +1,3 @@
+## Obtener un usuario por ID
+GET {{Api_HostAddress}}/usuario/51
+Authorization: Bearer {{Token}}

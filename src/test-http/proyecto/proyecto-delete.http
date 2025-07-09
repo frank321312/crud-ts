@@ -1,0 +1,11 @@
+## Eliminar usuario del proyecto
+DELETE {{Api_HostAddress}}/proyecto/delete-user/53/6
+Authorization: Bearer {{Token}}
+
+## Abandonar proyecto
+DELETE {{Api_HostAddress}}/proyecto/abandon-project/6
+Authorization: Bearer {{Token}}
+
+## Eliminar proyecto
+DELETE {{Api_HostAddress}}/proyecto/delete/6
+Authorization: Bearer {{Token}}

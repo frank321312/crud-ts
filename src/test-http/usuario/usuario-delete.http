@@ -1,0 +1,3 @@
+## Eliminar usuario
+DELETE {{Api_HostAddress}}/usuario/delete
+Authorization: Bearer {{Token}}

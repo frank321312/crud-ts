@@ -2,7 +2,6 @@ import {
     Entity,
     JoinColumn,
     ManyToOne,
-    OneToOne,
     PrimaryGeneratedColumn,
     type Relation,
 } from 'typeorm';
@@ -15,19 +14,27 @@ export class UsuarioProyecto {
     @PrimaryGeneratedColumn()
     id: number;
 
-    @OneToOne(() => Rol)
+    @ManyToOne(() => Rol, (r) => r.usuarioProyectos, { onDelete: 'SET NULL' })
     @JoinColumn({ name: 'id_rol' })
-    rol: Rol;
+    rol: Rol | null;
 
-    @ManyToOne(() => Usuario, (u) => u.usuarioProyectos)
+    @ManyToOne(() => Usuario, (u) => u.usuarioProyectos, {
+        onDelete: 'CASCADE',
+    })
     @JoinColumn({ name: 'id_usuario' })
     usuario: Relation<Usuario>;
 
-    @ManyToOne(() => Proyecto, (p) => p.usuarioProyectos)
+    @ManyToOne(() => Proyecto, (p) => p.usuarioProyectos, {
+        onDelete: 'CASCADE',
+    })
     @JoinColumn({ name: 'id_proyecto' })
-    proyecto: Proyecto;
+    proyecto: Relation<Proyecto>;
 
-    constructor(usuario: Relation<Usuario>, proyecto: Proyecto, rol: Rol) {
+    constructor(
+        usuario: Relation<Usuario>,
+        proyecto: Relation<Proyecto>,
+        rol: Rol,
+    ) {
         this.usuario = usuario;
         this.proyecto = proyecto;
         this.rol = rol;
