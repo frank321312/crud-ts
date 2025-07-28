@@ -1,0 +1,3 @@
+## Eliminar rol
+DELETE {{Api_HostAddress}}/rol/delete/36/7
+Authorization: Bearer {{Token}}

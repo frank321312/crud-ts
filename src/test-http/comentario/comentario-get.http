@@ -1,3 +1,0 @@
-## Obtener comentario por ID
-GET {{Api_HostAddress}}/comentario/get-coments-by-task/5/6
-Authorization: Bearer {{Token}}

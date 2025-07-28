@@ -21,10 +21,14 @@ export class ProyectoService {
     };
 
     actualizar = (id: number, nombre: string) =>
-        this.proyectoRepository.update(id, { nombre });
+        this.proyectoRepository.update(id, {
+            nombre,
+        });
 
     finalizar = (id: number) =>
-        this.proyectoRepository.update(id, { completado: new Date() });
+        this.proyectoRepository.update(id, {
+            completado: new Date(),
+        });
 
     eliminar = (id: number) => this.proyectoRepository.delete({ id });
 

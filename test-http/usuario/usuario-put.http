@@ -1,0 +1,27 @@
+## Actualizar email
+PATCH {{Api_HostAddress}}/usuario/update-email
+Content-Type: application/json
+Authorization: Bearer {{Token}}
+{
+    "correoElectronico": "ejemplo123@gmail.com",
+    "contrasena": "EstaEsMiPass123"
+}
+
+## Actualizar contraseña
+PATCH {{Api_HostAddress}}/usuario/update-password
+Content-Type: application/json
+Authorization: Bearer {{Token}}
+{
+    "contrasenaNuevo": "EstaEra12345",
+    "contrasenaAntigua": "EstaEsMiPass123"
+}
+
+## Actualizar nombre de usuario, nombre, apellido
+PATCH {{Api_HostAddress}}/usuario/update-unimportant-data
+Content-Type: application/json
+Authorization: Bearer {{Token}}
+{
+    "nombreUsuario": "Pepito12",
+    "nombre": "Julio Cesar",
+    "apellido": "Garcias"
+}

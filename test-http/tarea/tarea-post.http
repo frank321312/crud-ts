@@ -1,0 +1,9 @@
+## Crear tarea
+POST {{Api_HostAddress}}/tarea/create/9
+Content-Type: application/json
+Authorization: Bearer {{Token}}
+{
+    "titulo": "Nueva tarea",
+    "contenido": "Descripción de la tarea",
+    "idUsuarioAsignado": 54
+}

@@ -1,8 +1,0 @@
-## Crear comentario
-POST {{Api_HostAddress}}/comentario/create/6
-Content-Type: application/json
-Authorization: Bearer {{Token}}
-{
-    "contenido": "Este es un comentario de prueba",
-    "idTarea": 5
-}

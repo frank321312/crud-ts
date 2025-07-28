@@ -1,7 +1,0 @@
-## Actualizar rol
-PATCH {{Api_HostAddress}}/rol/update/26/6
-Content-Type: application/json
-Authorization: Bearer {{Token}}
-{
-    "nombre": "Full Stack Development ABCD"
-}

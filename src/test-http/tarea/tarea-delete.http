@@ -1,3 +1,0 @@
-## Eliminar tarea
-DELETE {{Api_HostAddress}}/tarea/5
-Authorization: Bearer {{Token}}

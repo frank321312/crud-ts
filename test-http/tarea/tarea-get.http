@@ -1,0 +1,11 @@
+## Obtener tareas por proyecto
+GET {{Api_HostAddress}}/tarea/get-tasks-by-project/6
+Authorization: Bearer {{Token}}
+
+## Obtener tarea por ID y proyecto
+GET {{Api_HostAddress}}/tarea/get-task/5/6
+Authorization: Bearer {{Token}}
+
+## Obtener tareas por usuario y proyecto
+GET {{Api_HostAddress}}/tarea/get-task-by-user/35/6
+Authorization: Bearer {{Token}}

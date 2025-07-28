@@ -1,3 +1,0 @@
-## Eliminar comentario
-DELETE {{Api_HostAddress}}/comentario/delete/5/6
-Authorization: Bearer {{Token}}

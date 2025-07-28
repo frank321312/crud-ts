@@ -1,7 +1,0 @@
-## Crear rol
-POST {{Api_HostAddress}}/rol/create/9
-Authorization: Bearer {{Token}}
-Content-Type: application/json
-{
-    "nombre": "Full Stack Development B"
-}
